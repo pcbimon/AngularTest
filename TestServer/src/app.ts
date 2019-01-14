@@ -5,6 +5,7 @@ import * as bodyParser from 'body-parser';
 
 import { sequelize } from './models';
 import { departments } from './routers/department.router';
+import {user} from "./routers/user.router";
 
 // Test connection
 sequelize
@@ -30,7 +31,9 @@ app.use((_req, res, next) => {
 app.get('/', (req, res) => {
     res.send('Hello World!')
 });
+app.use('/user', user);
 app.use('/departments', departments);
+
 app.use(errorhandler({
     debug: true,
     log: true

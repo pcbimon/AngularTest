@@ -10,6 +10,7 @@ import { ElectricityResult, ElectricitySource } from'./electricity.model';
 import { WaterResult, WaterSource} from './water.model';
 import { WasteResult, WasteSource} from './waste.model';
 import { Staff, Role, RoleType } from './info.model';
+import {User} from "./user.model";
 
 // Connect to database
 dotenv.config()
@@ -49,5 +50,6 @@ sq.addModels([
   WaterSource,
   WasteSource,
   WasteResult,
+  User,
 ])
 export const sequelize = sq;
