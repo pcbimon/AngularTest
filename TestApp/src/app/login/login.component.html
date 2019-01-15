@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="col-md-12 form-horizontal">
+    <br>
+    <mat-card>
+      <h1>Login App Example</h1>
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Username" name="username" id="username" value="" [(ngModel)]="username">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Password" type="password" name="pass"  id="pass" value="" [(ngModel)]="password">
+        </mat-form-field>
+      </form>
+      <button mat-flat-button color="primary" style="width: 100%" type="button" (click)="post_checkuser()" >Submit</button>
+      <hr>
+      <button mat-flat-button color="accent" style="width: 100%" type="button" (click)="get_register()" >Register</button>
+    </mat-card>
+  </div>
+</div>

@@ -3,9 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="83af241a-851d-42c9-8d26-a89fee0e32d3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestApp/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestApp/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestApp/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestApp/src/app/api.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/src/app/api.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestApp/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestApp/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/src/app/app.component.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestApp/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TestApp/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/src/app/app.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestApp/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestApp/src/app/users/users.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/src/app/users/users.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestApp/src/app/users/users.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/src/app/users/users.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestApp/src/app/users/users.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/src/app/users/users.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestApp/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestApp/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestApp/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/TestApp/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/src/database/init_db.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/src/database/init_db.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestServer/src/models/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/src/models/user.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TestServer/src/routers/user.router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/TestServer/src/routers/user.router.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -19,26 +32,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/TestServer/src/routers/user.router.ts">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/TestApp/src/app/users/users.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="11" column="31" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="31" />
+            <state relative-caret-position="345">
+              <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
               <folding>
-                <element signature="e#0#33#0" expanded="true" />
+                <element signature="e#0#50#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/TestApp/src/app/register/register.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+              <folding>
+                <element signature="e#0#50#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TestServer/src/models/index.ts">
+        <entry file="file://$PROJECT_DIR$/TestApp/src/app/login/login.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="92">
+              <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -50,6 +72,7 @@
       <find>departments</find>
       <find>deleteAt</find>
       <find>db</find>
+      <find>User Name</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -60,29 +83,43 @@
       <list>
         <option value="$PROJECT_DIR$/TestServer/db.config.json" />
         <option value="$PROJECT_DIR$/TestServer/src/app.ts" />
-        <option value="$PROJECT_DIR$/TestServer/src/models/index.ts" />
-        <option value="$PROJECT_DIR$/TestServer/src/models/user.model.ts" />
         <option value="$PROJECT_DIR$/TestServer/src/db.config.json" />
-        <option value="$PROJECT_DIR$/TestApp/src/app/app.module.ts" />
-        <option value="$PROJECT_DIR$/TestApp/src/app/api.service.ts" />
         <option value="$PROJECT_DIR$/TestApp/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/TestServer/src/models/user.model.ts" />
+        <option value="$PROJECT_DIR$/TestServer/src/models/index.ts" />
+        <option value="$PROJECT_DIR$/TestServer/src/database/init_db.ts" />
+        <option value="$PROJECT_DIR$/TestServer/dist/database/init_db.js" />
         <option value="$PROJECT_DIR$/TestApp/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/TestApp/src/app/users/users.component.ts" />
+        <option value="$PROJECT_DIR$/TestApp/src/app/users/users.component.css" />
+        <option value="$PROJECT_DIR$/TestApp/src/app/users/users.component.html" />
+        <option value="$PROJECT_DIR$/TestApp/src/app/login/login.component.css" />
+        <option value="$PROJECT_DIR$/TestApp/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/TestApp/src/index.html" />
+        <option value="$PROJECT_DIR$/TestApp/angular.json" />
+        <option value="$PROJECT_DIR$/TestApp/src/app/app-routing.module.ts" />
+        <option value="$PROJECT_DIR$/TestApp/src/app/login/login.component.html" />
+        <option value="$PROJECT_DIR$/TestApp/src/app/login/login.component.ts" />
+        <option value="$PROJECT_DIR$/TestApp/src/app/register/register.component.css" />
+        <option value="$PROJECT_DIR$/TestApp/src/app/api.service.ts" />
         <option value="$PROJECT_DIR$/TestServer/src/routers/user.router.ts" />
+        <option value="$PROJECT_DIR$/TestApp/src/app/register/register.component.html" />
+        <option value="$PROJECT_DIR$/TestApp/src/app/app.component.css" />
+        <option value="$PROJECT_DIR$/TestApp/src/app/users/users.component.ts" />
+        <option value="$PROJECT_DIR$/TestApp/src/app/register/register.component.ts" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="y" value="23" />
-    <option name="width" value="1366" />
-    <option name="height" value="685" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="377" />
+    <option name="y" value="-18" />
+    <option name="width" value="1600" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -114,6 +151,22 @@
               <item name="TestApp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AngularTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngularTest" type="462c0819:PsiDirectoryNode" />
+              <item name="TestApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="register" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AngularTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngularTest" type="462c0819:PsiDirectoryNode" />
+              <item name="TestApp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -125,7 +178,27 @@
               <item name="AngularTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="AngularTest" type="462c0819:PsiDirectoryNode" />
               <item name="TestServer" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AngularTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngularTest" type="462c0819:PsiDirectoryNode" />
+              <item name="TestServer" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AngularTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngularTest" type="462c0819:PsiDirectoryNode" />
+              <item name="TestServer" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AngularTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AngularTest" type="462c0819:PsiDirectoryNode" />
+              <item name="TestServer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="database" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="AngularTest" type="b2602c69:ProjectViewProjectNode" />
@@ -145,6 +218,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,6 +229,7 @@
     <property name="node.js.selected.package.tslint" value="D:\work\angular\TEST\AngularTest\TestServer\node_modules\tslint" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/TestServer/node_modules/typescript/lib" />
   </component>
@@ -182,22 +257,23 @@
       <updated>1547456538827</updated>
       <workItem from="1547456542609" duration="2551000" />
       <workItem from="1547467506998" duration="2701000" />
+      <workItem from="1547517933768" duration="22734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5252000" />
+    <option name="totallyTimeSpent" value="28159000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24907063" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16920152" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32971507" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -205,7 +281,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.30645162" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.24694708" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -252,60 +328,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestServer/src/database/init_db.ts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestServer/src/models/category.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestServer/src/models/user.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TestServer/src/db.config.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="23">
           <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestServer/db.config.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/app/api.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/app/users/users.component.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/app/users/users.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="16" column="37" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#50#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -319,20 +345,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/TestApp/src/app/app.module.ts">
+    <entry file="file://$PROJECT_DIR$/TestServer/db.config.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="69">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/TestServer/src/app.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="33" column="21" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="21" />
+        <state relative-caret-position="782">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="35" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
@@ -341,20 +364,185 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/TestServer/src/models/index.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        <state relative-caret-position="207">
+          <caret line="16" column="41" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/TestServer/dist/database/init_db.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="20" column="3" lean-forward="true" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestServer/src/database/init_db.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestServer/src/models/user.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestServer/src/models/category.model.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="1" selection-end-line="6" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/users/users.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="25" column="69" selection-start-line="25" selection-start-column="69" selection-end-line="25" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#58#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/angular.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="31" column="64" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="88" selection-start-line="10" selection-start-column="88" selection-end-line="10" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="8" column="55" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/register/register.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/login/login.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" lean-forward="true" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/TestServer/src/routers/user.router.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="31" />
+        <state relative-caret-position="517">
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/login/login.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="16" column="100" selection-start-line="16" selection-start-column="88" selection-end-line="16" selection-end-column="100" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#mat-card#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#button#1;n#mat-card#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="1" lean-forward="true" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/register/register.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="15" lean-forward="true" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#mat-card#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/api.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="23" column="55" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/users/users.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/login/login.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/users/users.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="15" column="16" lean-forward="true" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TestApp/src/app/register/register.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="34" column="6" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -6,7 +6,5 @@ export class User extends Model<User> {
     username?: string;
     @Column email?: string;
     @Column password?: string;
-    @CreatedAt createAt?: Date;
-    @UpdatedAt updateAt?: Date;
-    @DeletedAt deleteAt?: Date;
+
 }

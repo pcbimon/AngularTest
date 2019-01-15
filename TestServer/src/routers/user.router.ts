@@ -4,11 +4,8 @@ export const user = Router();
 
 user.get('/', async (_req, res, next) => {
     try{
-        User
-            .findAll()
+        User.findAll()
             .then((data) => {
-                console.log(data);
-                console.log('123');
                 return res.json(data);
             })
             .catch((err) => {
@@ -19,10 +16,22 @@ user.get('/', async (_req, res, next) => {
         next(e);
     }
 });
-user.get('/:id', async (_req, res, next) => {
+user.post('/register',async(req, res, next)=>{
     try{
-        res.json(await User.findById(_req.params['id']));
-    } catch (e) {
+        const user = await User.create(req.body);
+        res.status(201).json(user);
+    }catch(e){
+        next(e);
+    }
+});
+
+user.post('/checkuser',async(req, res, next)=>{
+    try{
+        const userdata = req.body;
+        User.findOne({ where: {username: userdata.username, password: userdata.password} }).then(data => {
+            return res.json(data);
+        })
+    }catch(e){
         next(e);
     }
 });

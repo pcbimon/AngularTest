@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="col-md-12 form-horizontal">
+    <br>
+    <mat-card>
+      <h1>Register New User</h1>
+      <form class="example-form">
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Username" name="username" id="username" value="" [(ngModel)]="Username">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Email" type="email" name="pass"  id="email" value="" [(ngModel)]="Email">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Password" type="password" name="pass"  id="pass" value="" [(ngModel)]="Password">
+        </mat-form-field>
+      </form>
+      <button mat-flat-button color="primary" style="width: 100%" type="button" (click)="post_addnewuser()" >Submit</button>
+    </mat-card>
+  </div>
+</div>
