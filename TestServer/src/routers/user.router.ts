@@ -4,7 +4,17 @@ export const user = Router();
 
 user.get('/', async (_req, res, next) => {
     try{
-        res.json(await User.findAll());
+        User
+            .findAll()
+            .then((data) => {
+                console.log(data);
+                console.log('123');
+                return res.json(data);
+            })
+            .catch((err) => {
+                console.log(err);
+                return err;
+            })
     } catch (e) {
         next(e);
     }
