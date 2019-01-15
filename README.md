@@ -1,4 +1,5 @@
 สร้างไฟล์ config ไว้ใน TestServer/src/db.config.json
+```
 {
   "dev": {
     "username": "root",
@@ -9,3 +10,6 @@
     "operatorsAliases": false
   }
 }
+```
+Initial DB 
+```node dist/database/init_db.js```
