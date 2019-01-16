@@ -20,6 +20,7 @@ import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
 import { RegisterComponent } from './register/register.component';
 import { UpdateComponent } from './users/update/update.component';
 import {AngularFontAwesomeModule} from "angular-font-awesome";
+import { ReportComponent } from './report/report.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {AngularFontAwesomeModule} from "angular-font-awesome";
     UsersComponent,
     LoginComponent,
     RegisterComponent,
-    UpdateComponent
+    UpdateComponent,
+    ReportComponent
   ],
   imports: [
     BrowserModule,
