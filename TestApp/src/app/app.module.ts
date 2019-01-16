@@ -21,6 +21,8 @@ import { RegisterComponent } from './register/register.component';
 import { UpdateComponent } from './users/update/update.component';
 import {AngularFontAwesomeModule} from "angular-font-awesome";
 import { ReportComponent } from './report/report.component';
+import { ChartComponent } from './report/chart/chart.component';
+import {ChartModule} from "angular2-chartjs";
 
 @NgModule({
   declarations: [
@@ -29,7 +31,8 @@ import { ReportComponent } from './report/report.component';
     LoginComponent,
     RegisterComponent,
     UpdateComponent,
-    ReportComponent
+    ReportComponent,
+    ChartComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +48,7 @@ import { ReportComponent } from './report/report.component';
     SweetAlert2Module,
     AngularFontAwesomeModule,
     ReactiveFormsModule,
+    ChartModule,
   ],
   providers: [SweetAlert2Module,{provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}],
   bootstrap: [AppComponent],

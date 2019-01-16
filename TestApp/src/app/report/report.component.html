@@ -1,3 +1,24 @@
-<p>
-  report works!
-</p>
+<button class="btn btn-default" id="btn" (click)="testprint()">Print</button>
+<div id="printinput">
+  <div class="col-md-12">
+    <table class="table table-hover" >
+      <thead>
+        <tr>
+          <th>col1</th>
+          <th>col2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td><td>row1</td>
+        </tr>
+        <tr>
+          <td>2</td><td>row2</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="col-md-12" style="width: 210mm;">
+    <chart [type]="typeChart" [data]="dataChart" [options]="optionsChart"></chart>
+  </div>
+</div>
