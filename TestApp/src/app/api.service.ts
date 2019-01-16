@@ -27,4 +27,19 @@ export class ApiService {
       email: jsondata.Email
     }).map((response) => response);
   }
+  getuserById(id: number): any{
+    return this.http.get(this.baseURL+'user/'+id, {responseType: 'json'});
+  }
+  updateuser(jsonstr: string): any{
+    const jsondata  = JSON.parse(jsonstr);
+    return this.http.post(this.baseURL + 'user/update/'+jsondata.id, {
+      id:jsondata.id,
+      username: jsondata.Username,
+      password: jsondata.Password,
+      email: jsondata.Email
+    }).map((response) => response);
+  }
+  deleteuser(id: number){
+    return this.http.post(this.baseURL + 'user/delete/'+id, {}).map((response) => response);
+  }
 }

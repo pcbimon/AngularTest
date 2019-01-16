@@ -1,0 +1,19 @@
+<div class="container">
+  <mat-card>
+    <h3>Update User Information ID : {{userdata?.id}}</h3>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Username" name="username" id="username" value="{{userdata?.username}}" [(ngModel)]="Input_username" required>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Email" [formControl]="email" name="email"  id="email" value="{{userdata?.email}}" [(ngModel)]="Input_email" required>
+      <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Password" type="password" name="pass"  id="pass" value="{{userdata?.password}}" [(ngModel)]="Input_password" required>
+    </mat-form-field>
+    <hr>
+    <button mat-flat-button color="primary" style="width: 100%" type="button" (click)="post_updateuser()" >Update</button>
+  </mat-card>
+</div>
+
+

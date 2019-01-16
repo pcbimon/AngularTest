@@ -17,7 +17,6 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
   post_addnewuser(){
-    console.log(this.Username);
     if (this.Username == undefined || this.Email == undefined || this.Password == undefined)
     {
       Swal({

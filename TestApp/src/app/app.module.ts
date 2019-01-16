@@ -5,19 +5,29 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from "@angular/common/http";
 import { UsersComponent } from './users/users.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { LoginComponent } from './login/login.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatButtonModule, MatCardModule, MatFormFieldModule, MatInputModule, MatTableModule} from "@angular/material";
+import {
+  ErrorStateMatcher,
+  MatButtonModule,
+  MatCardModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatTableModule, ShowOnDirtyErrorStateMatcher
+} from "@angular/material";
 import { SweetAlert2Module } from '@toverux/ngx-sweetalert2';
 import { RegisterComponent } from './register/register.component';
+import { UpdateComponent } from './users/update/update.component';
+import {AngularFontAwesomeModule} from "angular-font-awesome";
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    UpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -31,8 +41,10 @@ import { RegisterComponent } from './register/register.component';
     MatButtonModule,
     MatCardModule,
     SweetAlert2Module,
+    AngularFontAwesomeModule,
+    ReactiveFormsModule,
   ],
-  providers: [SweetAlert2Module],
-  bootstrap: [AppComponent]
+  providers: [SweetAlert2Module,{provide: ErrorStateMatcher, useClass: ShowOnDirtyErrorStateMatcher}],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
