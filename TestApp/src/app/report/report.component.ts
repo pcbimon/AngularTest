@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import printJS from 'print-js'
 import * as jsPDF from 'jspdf';
+import * as html2canvas from "html2canvas";
 
 @Component({
   selector: 'app-report',
