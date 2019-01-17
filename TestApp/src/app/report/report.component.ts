@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import printJS from 'print-js'
 import * as jsPDF from 'jspdf';
 import * as html2canvas from "html2canvas";
+import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-report',
@@ -12,36 +13,38 @@ export class ReportComponent implements OnInit {
   typeChart: any;
   dataChart: any;
   optionsChart: any;
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   ngOnInit() {
     this.linechart();
   }
 
   testprint(){
-    //
-    // document.getElementById("btn").style.visibility = "hidden";
-    // window.print();
-    // const getPrint = window.open(document.URL, '_blank');
-    // const hidebtn = document.getElementsByClassName("btn");
-
-    let doc = new jsPDF("p", "mm", "a4");
-
-    const source = document.getElementById("printinput");
-    var margins = {
-      top: 25,
-      bottom: 60,
-      left: 20,
-      width: 522
-    };
-
-    doc.text('Hello world!', 10, 10);
-    doc.addPage('a4','l');
-    doc.text('Hello world!', 10, 10);
-    doc.addHTML(document.body, margins.top, margins.left, {}, function() {
-      doc.save('test.pdf');
-    });
-    // doc.save('a4.pdf');
+    // //JSPDF
+    // let doc = new jsPDF("p", "mm", "a4");
+    // const source = document.getElementById("printinput");
+    // var margins = {
+    //   top: 25,
+    //   bottom: 60,
+    //   left: 20,
+    //   width: 522
+    // };
+    // doc.text('Hello world!', 10, 10);
+    // doc.addPage('a4','l');
+    // doc.text('Hello world!', 10, 10);
+    // doc.addHTML(document.body, margins.top, margins.left, {}, function() {
+    //   doc.save('test.pdf');
+    // });
+    let data = {'title': 'foo',	'body': 'bar', 'userId': 1};
+    this.http.get('http://localhost/phppdf/index.php')
+      .subscribe(
+        (res:Response) => {
+          console.log(res.json());
+        },
+        err => {
+          console.log("Error occured");
+        }
+      );
   }
   printWithCss() {
     //Works with Chome, Firefox, IE, Safari
