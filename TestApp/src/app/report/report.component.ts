@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import printJS from 'print-js'
 import * as jsPDF from 'jspdf';
 import * as html2canvas from "html2canvas";
+import * as pdfMake from 'pdfmake/build/pdfmake';
+import * as pdfFonts from 'pdfmake/build/vfs_fonts';
 import {HttpClient} from "@angular/common/http";
 
 @Component({
@@ -35,16 +37,59 @@ export class ReportComponent implements OnInit {
     // doc.addHTML(document.body, margins.top, margins.left, {}, function() {
     //   doc.save('test.pdf');
     // });
-    let data = {'title': 'foo',	'body': 'bar', 'userId': 1};
-    this.http.get('http://localhost/phppdf/index.php')
-      .subscribe(
-        (res:Response) => {
-          console.log(res.json());
-        },
-        err => {
-          console.log("Error occured");
+  //   let data = {'title': 'foo',	'body': 'bar', 'userId': 1};
+  //   this.http.get('http://localhost/phppdf/index.php')
+  //     .subscribe(
+  //       (res:Response) => {
+  //         console.log(res.json());
+  //       },
+  //       err => {
+  //         console.log("Error occured");
+  //       }
+  //     );
+    pdfMake.vfs = pdfFonts.pdfMake.vfs;
+    const dd = {
+      pageSize: 'A4',
+      pageOrientation: 'landscape',
+      content: [
+        {text: 'your pdf data'},
+        {
+          style: 'tableExample',
+          table: {
+            body: [
+              ['Column 1', 'Column 2', 'Column 3'],
+              ['One value goes here', 'Another one here', 'OK?']
+            ]
+          }
         }
-      );
+      ],
+      styles: {
+        header: {
+          fontSize: 18,
+          bold: true,
+          margin: [0, 0, 0, 10]
+        },
+        subheader: {
+          fontSize: 16,
+          bold: true,
+          margin: [0, 10, 0, 5]
+        },
+        tableExample: {
+          margin: [0, 5, 0, 15],
+          width: 500
+        },
+        tableHeader: {
+          bold: true,
+          fontSize: 13,
+          color: 'black'
+        }
+      },
+    };
+    // pdfMake.createPdf(dd).download();
+    const pdfDocGenerator = pdfMake.createPdf(dd);
+    pdfDocGenerator.getBlob((blob) => {
+      console.log(blob);
+    });
   }
   printWithCss() {
     //Works with Chome, Firefox, IE, Safari
